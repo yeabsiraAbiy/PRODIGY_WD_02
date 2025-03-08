@@ -69,9 +69,8 @@ h1{
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {
     .container {
-        padding: 30px;
+        padding: 10px;
         width: 80%;
-
     }
     #display {
         font-size: 1.8em;
@@ -86,14 +85,13 @@ h1{
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 495px) {
     body {
         flex-direction: column;
     }
     .container {
         width: 80%;
         padding: 20px;
-
     }
     #display {
         font-size: 1.5em;
@@ -105,6 +103,37 @@ h1{
     #laps {
         max-height: 150px;
         padding: 6px;
+    }
+}
+
+/* Media query for devices smaller than 370px */
+@media (max-width: 425px) {
+    body {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .container {
+        width: 80%; /* Content width set to 80% */
+        padding: 15px;
+    }
+    #display {
+        font-size: 1.4em;
+    }
+    .buttons {
+        display: flex; /* Align buttons horizontally */
+        justify-content: space-between; /* Space out buttons evenly */
+        flex-wrap: wrap; /* Allow buttons to wrap if needed */
+    }
+    .buttons button {
+        flex: 1 1 30%; /* Buttons will take up equal space and shrink if needed */
+        padding: 10px;
+        font-size: 0.75em;
+        margin: 5px; /* Add space between buttons */
+        min-width: 90px; /* Ensure buttons don't get too small */
+    }
+    #laps {
+        max-height: 120px;
+        padding: 5px;
     }
 }
 
@@ -130,7 +159,6 @@ h1{
     .container {
         width: 80%;
         padding: 60px;
-        
     }
     #display {
         font-size: 2.2em;
@@ -143,5 +171,3 @@ h1{
         max-height: 180px;
     }
 }
-
-
